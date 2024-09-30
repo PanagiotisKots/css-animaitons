@@ -1,1 +1,36 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation [2]</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<css-doodle>
+  <style>
+    @grid: 20 / 60vmin;
+
+    background: cyan;
+    scale: 0;
+    opacity: 0;
+    animation: m 4s linear infinite;
+    
+    animation-delay: calc(
+      -1s/@I * @i * @sin(@i)
+    );
+
+    @keyframes m {
+      0%, 50%, 90% { scale: 1; opacity: 1 }
+      25%, 75%, 100% { scale: 0; opacity: 0 }
+    }
+  </style>
+ </css-doodle>
+  
+
+</body>
+</html>
